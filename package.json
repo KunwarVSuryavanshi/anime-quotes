@@ -1,0 +1,20 @@
+{
+  "name": "anime-quotes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "author": "KunwarVSuryavanshi",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "fastify": "^4.15.0",
+    "nodemon": "^2.0.22"
+  }
+}
