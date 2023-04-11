@@ -2,11 +2,11 @@
   "name": "anime-quotes",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
-  "type": "module",
+  "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/index.js"
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "KunwarVSuryavanshi",
   "license": "ISC",
@@ -14,7 +14,9 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "@types/node": "^18.15.11",
     "fastify": "^4.15.0",
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1"
   }
 }
