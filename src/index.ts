@@ -1,12 +1,16 @@
-import fastify, { FastifyInstance } from "fastify";
+import fastify, { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
 
 const port: number = Number(process.env.PORT) || 6969;
 
 const server : FastifyInstance = fastify();
 
-server.get("/", (req, res) => {
+server.get("/", (req: FastifyRequest, res: FastifyReply) => {
 	res.send("Welcome to anime quotes! 😀");
 });
+
+server.get("/random", (req: FastifyRequest, res: FastifyReply) => {
+	
+})
 
 const start = async () => {
 	try {
